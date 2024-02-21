@@ -11,7 +11,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        // 'background-meal': "url('./assets/main-background.jpg')",
+        'house': "url('./src/assets/background/house.jpg')",
       }
     },
   },
