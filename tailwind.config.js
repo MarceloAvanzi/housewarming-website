@@ -12,7 +12,10 @@ export default {
     extend: {
       backgroundImage: {
         'house': "url('./src/assets/background/house.jpg')",
-      }
+      },
+      fontFamily: {
+        'montez': ['Montez', 'cursive'],
+      },
     },
   },
   plugins: [],
