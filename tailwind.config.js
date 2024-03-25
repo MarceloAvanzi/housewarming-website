@@ -11,7 +11,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'house': "url('src/assets/images/house.jpg')",
+        'house': "url('src/assets/images/background/housebg.jpg')",
       },
       fontFamily: {
         'montez': ['Montez', 'cursive'],
