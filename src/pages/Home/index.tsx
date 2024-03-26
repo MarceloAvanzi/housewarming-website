@@ -1,14 +1,14 @@
 import React from 'react';
-import Header from '../../components/Header';
-import Title from '../../components/Title';
+import MainLayout from '../../components/MainLayout';
 
 const Home: React.FC = () => {
     return (
         <>
-            <div className='min-h-screen min-y-screen bg-house bg-cover opacity-70'>
-                <Title />
-                <Header />
-            </div>
+            <MainLayout>
+                <div>
+                    {/* <button className='text-xl text-white'>lsaboiahsdbsa</button> */}
+                </div>
+            </MainLayout>
         </>
     );
 }
