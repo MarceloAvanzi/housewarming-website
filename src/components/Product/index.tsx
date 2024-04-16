@@ -22,13 +22,13 @@ const Products: React.FC<{ onClick: (product: Product) => void }> = ({ onClick }
 
     return (
         <div
-            className="flex items-center p-5 border border-gray-300 bg-white rounded-xl hover:shadow-md hover:border-black cursor-pointer"
+            className="flex items-center p-4 border border-gray-300 h-auto bg-white bg-opacity-80 rounded-xl hover:shadow-md hover:border-black cursor-pointer"
             onClick={handleClick}
         >
-            <img src={product.image} alt={product.name} className="w-24 h-auto mr-4" />
+            <img src={product.image} alt={product.name} className="w-80 h-80 mr-4 rounded-lg" />
             <div className="flex-grow">
-                <p className="text-lg font-semibold">{product.name}</p>
-                <p className="text-gray-600">${product.price}</p>
+                <p className="text-5xl font-semibold">{product.name}</p>
+                <p className="text-3xl text-gray-600">${product.price}</p>
             </div>
         </div>
     );

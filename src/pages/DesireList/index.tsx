@@ -16,8 +16,8 @@ const DesireList: React.FC = () => {
 
     return (
         <MainLayout>
-            <div className="mx-auto mt-8 max-w-screen-lg">
-                <div className="grid grid-cols-2 gap-4" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
+            <div className="mx-auto mt-8 max-w-screen">
+                <div className="grid grid-cols-2 gap-4 overflow-y-scroll no-scrollbar" style={{ maxHeight: '75vh', overflowY: 'auto' }}>
                     {[...Array(30)].map((_, index) => (
                         <Product key={index} onClick={handleProductClick} />
                     ))}
