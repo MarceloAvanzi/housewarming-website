@@ -20,6 +20,7 @@ const Header: React.FC = () => {
                     </div>
                 </header>
             </div>
+            <hr className="h-px mt-8 bg-gray-200 border-0 dark:bg-gray-500"></hr>
         </>
     );
 };
