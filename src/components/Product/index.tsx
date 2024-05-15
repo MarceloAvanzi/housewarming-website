@@ -22,7 +22,7 @@ const Products: React.FC<{ onClick: (product: Product) => void }> = ({ onClick }
                     onClick={() => handleClick(product)}
                 >
                     <img
-                        src={`/public/images/desired_products/${product.imagePath}`}
+                        src={`/public/images/${product.imagePath}`}
                         alt={product.name}
                         className="mobile:w-28 lg:w-80 mobile:h-28 lg:h-64 mr-4 rounded-lg outline outline-1 outline-gray-500 shadow-2xl"
                     />
