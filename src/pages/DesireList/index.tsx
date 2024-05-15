@@ -18,9 +18,7 @@ const DesireList: React.FC = () => {
         <MainLayout>
             <div className="mx-auto max-w-screen">
                 <div className="grid grid-cols-1 gap-4 overflow-y-scroll no-scrollbar" style={{ maxHeight: '75vh', overflowY: 'auto' }}>
-                    {[...Array(30)].map((_, index) => (
-                        <Product key={index} onClick={handleProductClick} />
-                    ))}
+                    <Product onClick={handleProductClick} />
                 </div>
                 {selectedProduct && <ProductModal product={selectedProduct} onClose={handleCloseModal} />}
             </div>
