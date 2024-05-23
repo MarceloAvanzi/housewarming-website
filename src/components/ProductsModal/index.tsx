@@ -6,7 +6,7 @@ const ProductModal: React.FC<{ product: any; onClose: () => void }> = ({ product
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-50 z-50">
             <div className="bg-white p-8 rounded-lg shadow-lg">
                 <h2 className="text-2xl font-semibold mb-4">{product.name}</h2>
-                <img src={`/public/images/desired_products/${product.imagePath}`} alt={product.name} className="w-64 h-full mb-4" />
+                <img src={`/images/${product.imagePath}`} alt={product.name} className="w-64 h-full mb-4" />
                 <p className="text-lg mb-4">${product.description}</p>
                 {/* <div className="mb-4">
                     <QRCode value={product.name} />
