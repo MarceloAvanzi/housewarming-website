@@ -7,7 +7,7 @@ const OwnedProduct: React.FC = () => {
             {ownedProducts.map((product) => (
                 <div
                     key={product.id}
-                    className="flex items-center p-4 border border-gray-300 h-auto bg-white bg-opacity-30 rounded-xl hover:shadow-md hover:border-black cursor-pointer transition-all"
+                    className="flex items-center p-4 mb-2 border border-gray-300 h-auto bg-white bg-opacity-30 rounded-xl hover:shadow-md hover:border-black cursor-pointer transition-all"
                 >
                     <img
                         src={`static/image/${product.imagePath}`}
