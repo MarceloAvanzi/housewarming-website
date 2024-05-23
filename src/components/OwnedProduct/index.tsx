@@ -1,12 +1,6 @@
 import React from 'react';
 import ownedProducts from '../../data/ownedProducts';
 
-interface Product {
-    id: number;
-    name: string;
-    imagePath: string;
-}
-
 const OwnedProduct: React.FC = () => {
     return (
         <div >

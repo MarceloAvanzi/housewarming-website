@@ -8,7 +8,7 @@ interface Product {
     description: string;
 }
 
-const DesiredProducts: React.FC<{ onClick: (product: Product) => void }> = ({ onClick }) => {
+const DesiredProducts: React.FC<{ onClick: (products: Product) => void }> = ({ onClick }) => {
     const handleClick = (product: Product) => {
         onClick(product);
     };
