@@ -8,7 +8,7 @@ interface Product {
     description: string;
 }
 
-const Products: React.FC<{ onClick: (product: Product) => void }> = ({ onClick }) => {
+const DesiredProducts: React.FC<{ onClick: (product: Product) => void }> = ({ onClick }) => {
     const handleClick = (product: Product) => {
         onClick(product);
     };
@@ -35,4 +35,4 @@ const Products: React.FC<{ onClick: (product: Product) => void }> = ({ onClick }
         </div>
     );
 };
-export default Products;
+export default DesiredProducts;

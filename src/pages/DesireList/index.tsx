@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ProductModal from '../../components/ProductsModal';
-import Product from '../../components/Product';
+import DesiredProductModal from '../../components/DesiredProductsModal';
+import DesiredProduct from '../../components/DesiredProduct';
 import MainLayout from '../../components/MainLayout';
 
 const DesireList: React.FC = () => {
@@ -17,10 +17,10 @@ const DesireList: React.FC = () => {
     return (
         <MainLayout>
             <div className="mx-auto max-w-screen">
-                <div className="grid grid-cols-1 gap-4 overflow-y-scroll no-scrollbar" style={{ maxHeight: '75vh', overflowY: 'auto' }}>
-                    <Product onClick={handleProductClick} />
+                <div className="grid grid-cols-1 gap-4 p-4 overflow-y-scroll no-scrollbar" style={{ maxHeight: '75vh', overflowY: 'auto' }}>
+                    <DesiredProduct onClick={handleProductClick} />
                 </div>
-                {selectedProduct && <ProductModal product={selectedProduct} onClose={handleCloseModal} />}
+                {selectedProduct && <DesiredProductModal product={selectedProduct} onClose={handleCloseModal} />}
             </div>
         </MainLayout>
     );
