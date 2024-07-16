@@ -5,6 +5,8 @@ const ownedProducts = [
     { id: 4, name: 'Sanduicheira', imagePath: '' },
     { id: 5, name: 'Mesa', imagePath: '' },
     { id: 6, name: 'Aspirador', imagePath: '' },
+    { id: 7, name: 'Chuveiro', imagePath: 'chuveiro.jpg'},
+
 ];
 
 export default ownedProducts;
