@@ -15,14 +15,14 @@ const TextSection: React.FC<TextSectionProps> = ({ title, content, direction }) 
 
   return (
     <motion.div 
-      className="bg-white shadow-md rounded-lg p-6 mb-8"
+      className="bg-white shadow-lg rounded-lg p-8 mb-8 max-w-md mx-auto"
       initial="hidden"
       animate="visible"
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 2 }}
       variants={variants}
     >
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">{title}</h2>
-      <p className="text-gray-700">{content}</p>
+      <p className="text-gray-700 text-justify">{content}</p>
     </motion.div>
   );
 }
