@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import DesiredProductModal from '../../components/DesiredProductsModal';
 import DesiredProduct from '../../components/DesiredProduct';
 import MainLayout from '../../components/MainLayout';
@@ -16,11 +17,15 @@ const DesireList: React.FC = () => {
 
     return (
         <MainLayout>
-            <div className="mx-auto max-w-screen">
-                <div className="grid grid-cols-1 gap-4 p-4 overflow-y-scroll no-scrollbar" style={{ maxHeight: '75vh', overflowY: 'auto' }}>
+            <div className="mx-auto max-w-screen-lg">
+                <div className="p-4 overflow-y-scroll no-scrollbar" style={{ maxHeight: '75vh', overflowY: 'auto' }}>
                     <DesiredProduct onClick={handleProductClick} />
                 </div>
-                {selectedProduct && <DesiredProductModal product={selectedProduct} onClose={handleCloseModal} />}
+                <AnimatePresence>
+                    {selectedProduct && (
+                        <DesiredProductModal product={selectedProduct} onClose={handleCloseModal} />
+                    )}
+                </AnimatePresence>
             </div>
         </MainLayout>
     );

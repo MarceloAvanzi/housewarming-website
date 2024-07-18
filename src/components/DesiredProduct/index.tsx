@@ -14,25 +14,25 @@ const DesiredProducts: React.FC<{ onClick: (products: Product) => void }> = ({ o
     };
 
     return (
-        <div >
+        <div className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {desireProductList.map((product) => (
                 <div
                     key={product.id}
-                    className="flex items-center p-4 mb-2 border border-gray-300 h-auto bg-white bg-opacity-30 rounded-xl hover:shadow-md hover:border-black cursor-pointer transition-all"
+                    className="flex flex-col items-center p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer"
                     onClick={() => handleClick(product)}
                 >
                     <img
                         src={`static/image/${product.imagePath}`}
                         alt={product.name}
-                        className="mobile:w-28 lg:w-80 mobile:h-28 lg:h-64 mr-4 rounded-lg outline outline-1 outline-gray-500 shadow-2xl"
+                        className="w-32 h-32 object-cover rounded mb-3"
                     />
-                    <div className="flex-grow">
-                        <p className="lg:text-5xl mobile:text-xl font-semibold">{product.name}</p>
-                        {/* <p className="text-3xl text-gray-600">${product.price}</p> */}
+                    <div className="text-center">
+                        <p className="text-lg font-medium text-gray-800">{product.name}</p>
                     </div>
                 </div>
             ))}
         </div>
     );
 };
+
 export default DesiredProducts;
