@@ -18,7 +18,7 @@ const TextSection: React.FC<TextSectionProps> = ({ title, content, direction }) 
       className="bg-white shadow-lg rounded-lg p-8 mb-8 max-w-md mx-auto"
       initial="hidden"
       animate="visible"
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       variants={variants}
     >
       <h2 className="text-2xl font-semibold text-gray-800 mb-4">{title}</h2>
