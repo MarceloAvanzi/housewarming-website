@@ -1,13 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import TextSectionProps from '../../entities/HomeDescriptionCard';
 
-interface TextSectionProps {
-  title: string;
-  content: string;
-  direction: 'left' | 'right';
-}
-
-const TextSection: React.FC<TextSectionProps> = ({ title, content, direction }) => {
+const HomeDescription: React.FC<TextSectionProps> = ({ title, content, direction }) => {
   const variants = {
     hidden: { opacity: 0, x: direction === 'left' ? -100 : 100 },
     visible: { opacity: 1, x: 0 }
@@ -27,4 +22,4 @@ const TextSection: React.FC<TextSectionProps> = ({ title, content, direction }) 
   );
 }
 
-export default TextSection;
+export default HomeDescription;
