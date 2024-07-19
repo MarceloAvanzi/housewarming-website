@@ -1,23 +1,33 @@
 import React from 'react';
 import ownedProducts from '../../data/ownedProducts';
+import { motion } from 'framer-motion';
+import OwnedProducts from '../../entities/OwnedProducts';
 
 const OwnedProduct: React.FC = () => {
+    const variants = (direction: 'left' | 'right') => ({
+        hidden: { opacity: 0, x: direction === 'left' ? -100 : 100 },
+        visible: { opacity: 1, x: 0 }
+    });
     return (
-        <div >
-            {ownedProducts.map((product) => (
-                <div
+        <div className="p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {ownedProducts.map((product: OwnedProducts) => (
+                <motion.div
                     key={product.id}
-                    className="flex items-center p-4 mb-2 border border-gray-300 h-auto bg-white bg-opacity-30 rounded-xl hover:shadow-md hover:border-black cursor-pointer transition-all"
+                    className="flex flex-col items-center p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+                    initial="hidden"
+                    animate="visible"
+                    transition={{ duration: 1 }}
+                    variants={variants(product.direction)}
                 >
                     <img
                         src={`static/image/${product.imagePath}`}
                         alt={product.name}
-                        className="mobile:w-28 lg:w-80 mobile:h-28 lg:h-64 mr-4 rounded-lg outline outline-1 outline-gray-500 shadow-2xl"
+                        className="w-32 h-32 object-cover rounded mb-3"
                     />
-                    <div className="flex-grow">
-                        <p className="lg:text-5xl mobile:text-xl font-semibold">{product.name}</p>
+                    <div className="flex-center">
+                        <p className="text-lg font-medium text-gray-800">{product.name}</p>
                     </div>
-                </div>
+                </motion.div>
             ))}
         </div>
     );
