@@ -15,7 +15,7 @@ const ProductModal: React.FC<{ product: any; onClose: () => void }> = ({ product
                 <img src={`static/image/${product.imagePath}`} alt={product.name} className="w-64 h-64 object-cover mb-4" />
                 <p className="text-lg mb-4">{product.description}</p>
                 <button onClick={onClose} className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
-                    Close
+                    Fechar
                 </button>
             </motion.div>
         </div>
