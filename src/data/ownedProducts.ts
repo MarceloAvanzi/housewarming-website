@@ -9,6 +9,7 @@ const ownedProducts: OwnedProducts[] = [
     { id: 6, name: 'Aspirador', imagePath: 'aspirador.jpg', direction: 'left' },
     { id: 7, name: 'Chuveiro', imagePath: 'chuveiro.jpg', direction: 'right' },
     { id: 8, name: 'Cooktop', imagePath: 'cooktop.jpg', direction: 'left' },
+    { id: 9, name: 'Lava e Seca', imagePath: 'lavaeseca.jpg', direction: 'right' },
 ];
 
 export default ownedProducts;
