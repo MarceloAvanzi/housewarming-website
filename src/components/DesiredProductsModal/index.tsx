@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Product from '../../entities/DesiredProduct';
 
-const ProductModal: React.FC<{ product: any; onClose: () => void }> = ({ product, onClose }) => {
+const ProductModal: React.FC<{ product: Product; onClose: () => void }> = ({ product, onClose }) => {
     return (
         <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-50 z-50">
             <motion.div

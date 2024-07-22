@@ -3,11 +3,12 @@ import { AnimatePresence } from 'framer-motion';
 import DesiredProductModal from '../../components/DesiredProductsModal';
 import DesiredProduct from '../../components/DesiredProduct';
 import MainLayout from '../../components/MainLayout';
+import Product from '../../entities/DesiredProduct';
 
 const DesireList: React.FC = () => {
-    const [selectedProduct, setSelectedProduct] = useState<any | null>(null);
+    const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
-    const handleProductClick = (product: any) => {
+    const handleProductClick = (product: Product) => {
         setSelectedProduct(product);
     };
 
