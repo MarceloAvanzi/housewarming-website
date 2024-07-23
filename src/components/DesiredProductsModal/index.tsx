@@ -15,7 +15,7 @@ const ProductModal: React.FC<{ product: Product; onClose: () => void }> = ({ pro
                 <h2 className="text-2xl font-semibold mb-4">{product.name}</h2>
                 <img src={`static/image/${product.imagePath}`} alt={product.name} className="w-64 h-64 object-cover mb-4" />
                 <p className="text-lg mb-4">{product.description}</p>
-                <button onClick={onClose} className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
+                <button onClick={onClose} className="px-4 py-2 bg-gray-500 text-white rounded-md hover:bg-gray-600">
                     Fechar
                 </button>
             </motion.div>

@@ -19,7 +19,7 @@ const DesireList: React.FC = () => {
     return (
         <MainLayout>
             <div className="mx-auto max-w-screen-lg">
-                <div className="p-4 overflow-y-scroll no-scrollbar" style={{ maxHeight: '75vh', overflowY: 'auto' }}>
+                <div className="p-4 overflow-y-scroll no-scrollbar" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
                     <DesiredProduct onClick={handleProductClick} />
                 </div>
                 <AnimatePresence>

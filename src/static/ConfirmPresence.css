@@ -1,0 +1,13 @@
+.neon-button-container {
+    @apply flex justify-center items-center mb-8 px-4 py-2;
+}
+
+.neon-button {
+    @apply text-black bg-[#ffffff] border-2 border-[#000000] rounded-md text-center px-10 py-2 transition duration-300 ;
+    box-shadow: 0 0 10px #000000;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 10px #a77d56;
+    color: #a77d56;
+}

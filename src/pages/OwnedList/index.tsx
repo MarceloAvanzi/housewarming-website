@@ -6,7 +6,7 @@ const OwnedList: React.FC = () => {
     return (
         <MainLayout>
             <div className="mx-auto max-w-screen">
-                <div className="grid grid-cols-1 gap-4 p-4 overflow-y-scroll no-scrollbar" style={{ maxHeight: '75vh', overflowY: 'auto' }}>
+                <div className="grid grid-cols-1 gap-4 p-4 overflow-y-scroll no-scrollbar" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
                     <OwnedProduct />
                 </div>
             </div>

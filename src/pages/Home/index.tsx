@@ -1,13 +1,15 @@
 import React from 'react';
 import MainLayout from '../../components/MainLayout';
 import HomeDescriptionCard from '../../components/HomeDescription';
+import ConfirmPresence from '../../components/ConfirmPresence';
 
 const Home: React.FC = () => {
     return (
         <>
             <MainLayout>
                 <div className="mx-auto max-w-screen">
-                    <div className="p-8 overflow-y-scroll no-scrollbar" style={{ maxHeight: '75vh', overflowY: 'auto' }}>
+                    <div className="p-6 overflow-y-scroll no-scrollbar" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
+                        <ConfirmPresence />
                         <HomeDescriptionCard
                             title="🏠 Gabriela e Marcelo"
                             content="Estamos muito felizes em compartilhar a conquista do nosso novo lar com vocês! Gostaríamos de convidar todos os familiares para o nosso Chá de Casa Nova e comemorarmos juntos."
